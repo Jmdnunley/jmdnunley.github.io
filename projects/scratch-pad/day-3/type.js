@@ -14,8 +14,8 @@
  */
 function isArray(value) {
     // YOUR CODE BELOW HERE //
-    
-    
+    //Use Array.isArray
+   
     
     
     // YOUR CODE ABOVE HERE //
