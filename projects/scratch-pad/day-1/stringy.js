@@ -66,11 +66,19 @@ return string.toUpperCase();
 //E enforce lowercase
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-//let splitAndJoinMethod = string.split(' ').join('-');
-   //return splitAndJoinMethod.toLowerCase();
-
+   return string.replace(/\s/g, "-").toLowerCase();// used .replace to replace a string with a dash 
     // YOUR CODE ABOVE HERE //
 }
+
+//create a variable called search that will search for spaces
+var search = // needs to be a for in loop that searches through the code block to determine where the spaces are. 
+//for (var i = 0; i < string.length; i++){
+    //string += string[i].replace(" ", "-").toLowerCase();
+
+
+//create a variable replace set to a dash 
+//var replace = "-"; => corect ?? error showing unexpected token var 
+
 
 /**
  * Given an input String and a single character, return true if the String
@@ -86,11 +94,17 @@ function toDashCase(string) {
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
+   
 
     
 
     // YOUR CODE ABOVE HERE //
 }
+
+
+
+
+
 
 /**
  * Given an input String and a single character, return true if the String
@@ -115,15 +129,19 @@ return string[string.length - 1].toLowerCase() === char.toLowerCase();
 /**
  * Given two input Strings, return the Strings concatenated into one.
  *
- * TIP: What's the operator to concatenate two Strings?
+ * TIP: What's the operator to concatenate two Strings? - addition mathmatical operator needs to be used 
  */
+
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+return 
 
 
     // YOUR CODE ABOVE HERE //
 }
+
+console.log(concat("Hello", "World"));
+
 
 /**
  * Given any number of Strings, return all of them joined together.

@@ -15,19 +15,22 @@
  *  a. create something to collect the output you'll return.
  *  b. you'll need a loop, which one is best? How do you know 
  *     when to stop looping?
- *  c. how do you access individual characters of a String?
+ *  c. how do you access individual characters of a String? - bracket notation
  *  d. how do you concatenate Strings? What operator do we use?
  */
 
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
+    //Create something to collect the output youll return
+    return (input).split("").reverse().join(""); //Used dot notation to split the input string in order to reverse it then join it back together. 
     
     
     // YOUR CODE GOES ABOVE HERE //
 }
 
+
+
+console.log(reverseString("Hello")); // should return "olleH" becuase the string will have ran through the fucntion , split the word up and joined in back together in reverse. 
 
 
 
