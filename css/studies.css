@@ -40,7 +40,7 @@ nav a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(138, 175, 245);
+    background: rgb(240,248,255);
     display: flex;
     padding:inherit;
 }
