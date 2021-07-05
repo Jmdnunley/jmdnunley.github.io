@@ -41,8 +41,11 @@ function createLessThanFilter(base) {
  */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
+    return function(string) {
+        return string[0] === startsWith;
+    };
     
-    
+
     
     
     // YOUR CODE ABOVE HERE //

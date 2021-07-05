@@ -35,42 +35,20 @@
 
 // YOUR CODE GOES BELOW HERE //
 function makeContact(id, nameFirst, nameLast) {
-var contact = {id: id,
-    nameFirst: nameFirst,
-    nameLast: nameLast 
-};
-
-return contact; 
+    return {id:id,
+    nameFirst:nameFirst,
+    nameLast:nameLast};
 } 
 
 
-function makeContactList() {
+function makeContactList(id, nameFirst, nameLast) {
     /*
      * You need something here to hold contacts. See length api for a hint:
      */
-    var contacts = [];
-    
-    return {
-        // we implemented the length api for you //
-        length: function() {
-            return contacts.length;
-        },
-        addContact: function(contact) {
-    },
-    findContact: function(fullName) {
-}, 
-removeContact: function(removeContact) {
-    
 }
 
 
-
-
 // YOUR CODE GOES ABOVE HERE //
-
-
-
-
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
 (typeof process.versions.node !== 'undefined')) {

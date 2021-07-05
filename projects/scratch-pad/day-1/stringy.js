@@ -13,39 +13,36 @@
  * work?
  */
 function length(string) {
-    // YOUR CODE BELOW HERE //
-    //I: string
-    //O: length
-    //C:
-    //E:
-    return string.length;
-
-
-
-    // YOUR CODE ABOVE HERE //
+ return string.length;
+   // YOUR CODE BELOW HERE //
+ //return the length the string using .length method
+// YOUR CODE ABOVE HERE //
 }
+length('Hello');
+
+/*var str = "HELLO";
+for(var i=0; i<str.length; i++);
+console.log(i);*/
 
 /**
  * Given an input String, return a new String forced to lowercase.
  */
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-return string.toLowerCase();
-
+    //loop over the entire strin 
+       return string.toLowerCase(); //allows function to return new toLowerCase string input
+   }
     // YOUR CODE ABOVE HERE //
-}
+console.log(toLowerCase("HELLO"));//prints "hello"; new string forced to lowercase
 
-/**
- * Given an input String, return a new String forced to uppercase.
- */
+ //* Given an input String, return a new String forced to uppercase.
+ //*/
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-return string.toUpperCase();
-
-
+       return string.toUpperCase();//allows function to return new toUpperCase string input
     // YOUR CODE ABOVE HERE //
 }
-
+console.log(toUpperCase("hello")); // prints "HELLO"; new string forced to uppercase
 /**
  * Given an input String, return a new String forced to dash-case.
  *
@@ -59,27 +56,14 @@ return string.toUpperCase();
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
- 
-//I String (parameter)
-//O lowercased string dash cased 
-//C return a string
-//E enforce lowercase
-function toDashCase(string) {
-    // YOUR CODE BELOW HERE //
-   return string.replace(/\s/g, "-").toLowerCase();// used .replace to replace a string with a dash 
-    // YOUR CODE ABOVE HERE //
+function toDashCase(string){
+//YOUR CODE BELOW HERE
+let stringDash = string.replace(/[" "]/g,"-");
+console.log(stringDash.toLowerCase(string)); // Sample-text
 }
-
-//create a variable called search that will search for spaces
-var search = // needs to be a for in loop that searches through the code block to determine where the spaces are. 
-//for (var i = 0; i < string.length; i++){
-    //string += string[i].replace(" ", "-").toLowerCase();
-
-
-//create a variable replace set to a dash 
-//var replace = "-"; => corect ?? error showing unexpected token var 
-
-
+toDashCase("Hello World");
+toDashCase("Should Work With Many Words");
+//YOUR CODE ABOVE HERE
 /**
  * Given an input String and a single character, return true if the String
  * begins with the character, false otherwise. The Function is case insensitive.
@@ -94,17 +78,10 @@ var search = // needs to be a for in loop that searches through the code block t
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-   
 
-    
 
     // YOUR CODE ABOVE HERE //
 }
-
-
-
-
-
 
 /**
  * Given an input String and a single character, return true if the String
@@ -120,7 +97,7 @@ function beginsWith(string, char) {
  */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-return string[string.length - 1].toLowerCase() === char.toLowerCase();
+
 
 
     // YOUR CODE ABOVE HERE //
@@ -129,19 +106,14 @@ return string[string.length - 1].toLowerCase() === char.toLowerCase();
 /**
  * Given two input Strings, return the Strings concatenated into one.
  *
- * TIP: What's the operator to concatenate two Strings? - addition mathmatical operator needs to be used 
+ * TIP: What's the operator to concatenate two Strings?
  */
-
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-return 
-
-
+return stringOne + " " + stringTwo;
     // YOUR CODE ABOVE HERE //
 }
-
-console.log(concat("Hello", "World"));
-
+concat("Hello", "World");
 
 /**
  * Given any number of Strings, return all of them joined together.
@@ -187,12 +159,14 @@ function longest(stringOne, stringTwo) {
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+return stringOne < stringTwo ? 1 : stringTwo < stringOne ? -1 : stringOne == stringTwo ? 0 : 0;
 
 
     // YOUR CODE ABOVE HERE //
 }
-
+console.log('abc', 'acb');
+console.log('acb', 'abc');
+console.log('abc', 'abc');
 
 /**
  * Given two Strings, return 1 if the first is lower in alphabetical order than
@@ -203,15 +177,16 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
-
+  return stringOne < stringTwo ? -1 : stringTwo < stringOne ? 1 : stringOne == stringTwo ? 0 : 0;
     // YOUR CODE ABOVE HERE //
 }
+console.log(sortDescending("abc", "acb"));
+console.log(sortDescending("acb", "abc"));
+console.log(sortDescending("abc", "abc "));
 
 
-// DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
     (typeof process.versions.node !== 'undefined')) {
     // here, export any references you need for tests //

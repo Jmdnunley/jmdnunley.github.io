@@ -39,13 +39,13 @@ function greeter(hour) {
     if (hour < 12){
         console.log('Good Morning');//=> 'Good Morning' prints to console if statement is 'true'
      } //first else if instance 
-     else if (hour < 17){ 
+     if (hour < 17){ 
         console.log('Good Afternoon');// =>'Good Afternoon' prints to console if statement is 'true'
      } //second else if instance
-     else if (hour < 22){
+     if (hour < 22){
          console.log('Good Evening');// => 'Good Evening' prints to console if statemnet is 'true'
      } // else statemnent to close out fucntion for hours >= 22 
-     else {
+     else{
          console.log('Good Night'); //=> 'Good Night' prints to console if 
      }
 }
