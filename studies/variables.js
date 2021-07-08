@@ -1,6 +1,6 @@
 /*
  * VARIABLES:
- *
+ * Purpose:
  * 0. To hold things in memory during the life-cycle of a program, we can use variables.  Variables
  * are named identifiers that can point to values of a particular type, like a Number, String,
  * Boolean, Array, Object or another data-type.  Variables are called so because once created, we

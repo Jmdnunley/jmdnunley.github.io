@@ -194,6 +194,9 @@ _.each = function(collection, func){
 *   _.unique([1,2,2,4,5,6,5,2]) -> [1,2,4,5,6]
 */
 
+_.unique = function (array){
+    
+};
 
 /** _.filter
 * Arguments:
@@ -225,7 +228,8 @@ _.each = function(collection, func){
 *   _.reject([1,2,3,4,5], function(e){return e%2 === 0}) -> [1,3,5]
 */
 
-
+_.reject = function(array,fucntion){
+};
 /** _.partition
 * Arguments:
 *   1) An array
@@ -245,6 +249,9 @@ _.each = function(collection, func){
 }
 */
 
+_.partition = function(array, funciton){
+    
+};
 
 /** _.map
 * Arguments:
@@ -274,6 +281,9 @@ _.each = function(collection, func){
 *   _.pluck([{a: "one"}, {a: "two"}], "a") -> ["one", "two"]
 */
 
+_.pluck = function(){
+    
+};
 
 /** _.every
 * Arguments:
@@ -295,7 +305,9 @@ _.each = function(collection, func){
 *   _.every([2,4,6], function(e){return e % 2 === 0}) -> true
 *   _.every([1,2,3], function(e){return e % 2 === 0}) -> false
 */
-
+_.every = function(collection, function){
+    
+};
 
 /** _.some
 * Arguments:
@@ -317,7 +329,9 @@ _.each = function(collection, func){
 *   _.some([1,3,5], function(e){return e % 2 === 0}) -> false
 *   _.some([1,2,3], function(e){return e % 2 === 0}) -> true
 */
-
+ _.same = function(collection, fucntion){
+     
+ };
 
 /** _.reduce
 * Arguments:
@@ -338,6 +352,9 @@ _.each = function(collection, func){
 *   _.reduce([1,2,3], function(previousSum, currentValue, currentIndex){ return previousSum + currentValue }, 0) -> 6
 */
 
+_.reduce = function(array,function, seed){
+    
+};
 
 /** _.extend
 * Arguments:
@@ -353,6 +370,7 @@ _.each = function(collection, func){
 *   _.extend(data, {b:"two"}); -> data now equals {a:"one",b:"two"}
 *   _.extend(data, {a:"two"}); -> data now equals {a:"two"}
 */
+
 
 //////////////////////////////////////////////////////////////////////
 // DON'T REMOVE THIS CODE ////////////////////////////////////////////
