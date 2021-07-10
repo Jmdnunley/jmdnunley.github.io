@@ -228,8 +228,7 @@ _.unique = function (array){
 *   _.reject([1,2,3,4,5], function(e){return e%2 === 0}) -> [1,3,5]
 */
 
-_.reject = function(array,fucntion){
-};
+
 /** _.partition
 * Arguments:
 *   1) An array
@@ -249,9 +248,6 @@ _.reject = function(array,fucntion){
 }
 */
 
-_.partition = function(array, funciton){
-    
-};
 
 /** _.map
 * Arguments:
@@ -305,9 +301,7 @@ _.pluck = function(){
 *   _.every([2,4,6], function(e){return e % 2 === 0}) -> true
 *   _.every([1,2,3], function(e){return e % 2 === 0}) -> false
 */
-_.every = function(collection, function){
-    
-};
+
 
 /** _.some
 * Arguments:
@@ -329,9 +323,7 @@ _.every = function(collection, function){
 *   _.some([1,3,5], function(e){return e % 2 === 0}) -> false
 *   _.some([1,2,3], function(e){return e % 2 === 0}) -> true
 */
- _.same = function(collection, fucntion){
-     
- };
+
 
 /** _.reduce
 * Arguments:
@@ -352,9 +344,33 @@ _.every = function(collection, function){
 *   _.reduce([1,2,3], function(previousSum, currentValue, currentIndex){ return previousSum + currentValue }, 0) -> 6
 */
 
-_.reduce = function(array,function, seed){
+_.reduce = function(array,func, seed){
+    if (seed === undefined){
+        //re-assign see to be the first element in the array
+        seed = array[0];
+        //loop through array to get access to each elemetn in the array
+        for (var i = 1; i < array.length; i++){
+         seed = func(seed, array[i], i);
+        }
+
+
+        _.each (array, function(value, i){
+            if(i !== 0){
+            seed = func(seed, value, i);
+            }
+        })
+    //return seed
+    return seed;
+    }else {
+    //loop over array to get access to each value 
+    _.each(array, function(value, i){
+    for(var i = 0; i < array.length; i++){
+        seed = func(seed, array[i], i);
+    });
+    return seed;
+}
     
-};
+}
 
 /** _.extend
 * Arguments:

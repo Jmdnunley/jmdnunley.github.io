@@ -26,7 +26,7 @@
  *         of items currently for sale on Novemberalphaclothing.com
  *         each items should have the name, color option, and sizes.*/
  /*    
- *      var itemsForSale = { 
+ *      var itemsForSale = {   
  *      tshirt: 'Ambitious Tee'
  *      colors: ['white and red', 'black and white', 'white and black'],
  *      sizes:  ['XS', 'S', 'M', 'L', 'XL', 'XXL'],

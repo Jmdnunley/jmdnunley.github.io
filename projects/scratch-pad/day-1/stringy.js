@@ -78,11 +78,9 @@ toDashCase("Should Work With Many Words");
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-
-    // YOUR CODE ABOVE HERE //
+    
+// YOUR CODE ABOVE HERE //
 }
-
 /**
  * Given an input String and a single character, return true if the String
  * ends with the character, false otherwise. The Function is case insensitive.
@@ -99,7 +97,6 @@ function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
 
-
     // YOUR CODE ABOVE HERE //
 }
 
@@ -110,10 +107,11 @@ function endsWith(string, char) {
  */
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-return stringOne + " " + stringTwo;
-    // YOUR CODE ABOVE HERE //
+return stringOne + ' ' + stringTwo;
+
+// YOUR CODE ABOVE HERE //
 }
-concat("Hello", "World");
+concat('November', 'Alpha');
 
 /**
  * Given any number of Strings, return all of them joined together.

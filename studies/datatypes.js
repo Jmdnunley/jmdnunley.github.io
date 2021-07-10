@@ -118,13 +118,17 @@
 * 9. NaN: 33 * undefined;  // => NaN // We cannot multiple a number by undefined this will thus return NaN
 *
 * 
-* 10. Infinity and -Infinity:
+* 10. Infinity and -Infinity: Infinity is a  number property that has a positive infinity value.
+* Infinity is displayed when a number exceeds the upper limit of the floating point numbers, which is 1.797693134862315E+308.
+* Infiniti is a number property that has a positive infinitiy value.
+* -Infinity is displayed when a number exceeds the lower limit of the floating point numbers, which is -1.797693134862316E+308.
 *
-*
-* 11. Primitive/Simple and Complex: 
-*
-*
-* 12. Primitive values are passed to a function BY COPY, complex vvalues are BY REFERENCE. What does 
-* mean, and how are they different? 
 * 
+*
+* 11, 12. Primitive/Simple and Complex: 
+*       Primitive/Simple: These data types are Atomic, immutable. they don not hold, collect, or aggregate other values. The original
+* value will not be altered becuase operations on simple values return new simple values. 
+*       Complex: Values aggregate other values and therefore are of indefinitie size. Complex data types are copy by reference - when 
+* assigning or passing, complex data-types are passed by reference. 
+*
 */
