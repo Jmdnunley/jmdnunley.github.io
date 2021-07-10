@@ -35,33 +35,5 @@
 *      ! : NOT/BANG: forces whatever is next to it to be the oposite.
 *     && : And: Both values have to be true to return true used when you n eed two things to be true.
 *     || : Or: Both values have to be true to return true used when you n eed two things to be true.
-*     
-*
-*
-* 5. Unary operators(!, typeOf, -): 
-*
-*
-*
-*
-*
-* 6. Tenary operator(a ? b : c): 
-*
-*
-*
-* 
-*
-*
-/* USE
-* 1. Assignment operators: 
-*      
-*
-*
-*
-*
-*
-*
-*
-*
-* 
 *
 */

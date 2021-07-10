@@ -31,7 +31,7 @@
         let university = "Grambling State University was founded in" + " " + foundedIn + ".";
         console.log(university);// prints => "Grambling State University was founded in 1901."
         
-    // Manuoulating string swith methods //
+    // Manipulating string switch methods //
 
    //1. concat();
        let imHome = "Lucy, ";
